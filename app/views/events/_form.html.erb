@@ -1,0 +1,36 @@
+<%= form_for @event do |f| %>
+<div>
+<%= f.label :title, "What's your event title?" %>
+<%= f.text_field :title %>
+ </div>
+<h6>
+&nbsp;
+</h6>
+
+<div>
+<%= f.label :location, "Where ?" %>
+<%= f.text_area :location %>
+ </div>
+ <h6>
+&nbsp;
+</h6>
+<div>
+<%= f.label  :date %>
+<%= f.date_field :date %>
+
+</div>
+<h6>
+&nbsp;
+</h6>
+ <div>
+<%= f.label :description, "Event Description" %>
+<%= f.text_field :description %>
+ </div>
+
+<h6>
+&nbsp;
+</h6>
+
+<%= f.submit %>
+<% end %>
+

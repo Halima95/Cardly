@@ -14,3 +14,15 @@
 <a href="./<%= @event.id %>/edit">Edit</a>
 <br>
 <%= link_to 'Delete', event_path(@event), method: :delete %>
+
+<h1>invitees</h1>
+<% @event.invitations.each do |invitation| %>
+<ul>
+<li>
+ <p><%= invitation.name %>: <%= invitation.email %> </p> 
+</li>
+</ul>
+<% end %>
+
+<h5> Send invitation:</h2>
+<%= render partial: 'invitation_form' %>

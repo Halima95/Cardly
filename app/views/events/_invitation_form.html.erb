@@ -1,0 +1,8 @@
+
+<%= form_for @event.invitations.new do |f| %>
+<%= f.label :name %> <%= f.text_field :name %><br>
+<%= f.label :email %> <%= f.text_field :email %><br>
+<%= hidden_field_tag "invitation[event_id]", params[:id] %>
+
+<%= f.submit  value="send invitation"%>
+<% end %>

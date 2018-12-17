@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Invitation.destroy_all
+
+Invitation.create(name: "Noura Alhadlaq", email: "Noura6.1994@gmail.com", event_id: 1)

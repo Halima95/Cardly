@@ -1,0 +1,8 @@
+<%= form_for @invitation do |f| %>
+<%= f.label :name %> <%= f.text_field :name %><br>
+<%= f.label :email %> <%= f.text_field :email %><br>
+<%= f.label :event_id, "The Event" %> <br>
+<%= f.collection_select :event_id, Event.all,:id, :title  %>
+
+<%= f.submit %>
+<% end %>

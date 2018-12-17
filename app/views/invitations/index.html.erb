@@ -1,0 +1,8 @@
+<h1>all invitations</h1>
+<% @invitations.each do |invitation| %>
+<ul>
+<li>
+<h3><%= invitation.name %>: </h3> <p> <%= invitation.email %>  <%= invitation.event.title %> </p> 
+</li>
+</ul>
+<% end %>

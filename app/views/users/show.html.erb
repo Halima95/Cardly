@@ -1,1 +1,11 @@
-<h1> <%= @user.email %> </h1>
+<h2>Profile</h2>
+<h3>username: </h3> <p> <%= @user.name %></p>
+<h3>email: </h3><p><%= @user.email %></p>
+<h3>My Events</h3>
+
+
+<% @user.events.each do |event| %>
+    <ul>
+        <li> <a href="<%= event_path(event)%>"> <%= event.title %> </a></li>
+    </ul>
+     <% end %>

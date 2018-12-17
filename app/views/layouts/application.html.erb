@@ -4,7 +4,8 @@
     <title>CardlyApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -12,10 +13,19 @@
 <header >
 
   <nav>
- 
+   <div >
+  <ul  class="left hide-on-med-and-down">
+
+  <li><%= link_to 'Create Event', new_event_path %> </li>
+  </ul>
   
 
   <% if user_signed_in? %>
+
+      <ul class="left hide-on-med-and-down">
+    <%= link_to "Profile", user_path(current_user) %>
+    </ul>
+
     <ul class="right hide-on-med-and-down">
     <%= link_to "Log_Out", destroy_user_session_path, method: :delete %>
     </ul>
@@ -28,6 +38,7 @@
   <% end%>
   </div>
   </nav>
+
 </header>
 
   <body>

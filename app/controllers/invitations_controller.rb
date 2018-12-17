@@ -12,8 +12,27 @@ class InvitationsController < ApplicationController
   end
 
   def create
-    @invitation = Invitation.create(invitation_params)
-    redirect_to @invitation.event
+    @invitation = Invitation.new(invitation_params)
+    if @invitation.save
+      InviteMailer.welcome(@invitation).deliver_now
+      redirect_to @invitation.event
+      # format.html { redirect_to event_path(@invitation.event.id) }
+      #  respond_to do |format|
+      #       if @invitation.save
+
+      #         # Just this lin -- all it says is, in invitationMailer (the controller) call the welcome method immediately,
+      #         # then pass it the newly made invitation.
+      #         InviteMailer.welcome(@invitation).deliver_now
+
+      #         format.html { redirect_to @invitation, notice: 'invitation was successfully created.' }
+      #         format.json { render :show, status: :created, location: @invitation }
+      #       else
+      #         format.html { render :new }
+      #         format.json { render json: @invitation.errors, status: :unprocessable_entity }
+      #       end
+    end
+
+    # redirect_to @invitation.event
   end
 
   def edit

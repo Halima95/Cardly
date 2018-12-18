@@ -1,11 +1,16 @@
 <div>
-  <h2> Hi <%= @invitation.name %>!</h2>
+  <h2> Hello <%= @invitation.name %>!</h2>
   <hr>
- <h3> You are inited to :</h3>
-  <p>
-  <%= @invitation.event%>
-  </p>
-
+ <h3> You are invited by: <%= @invitation.event.user.email %></h3>
+  <h3> to: <%= @invitation.event.title%></h3>
+  <div>
+  <p> on <%= @invitation.event.date%> </p>
+  <p> at <%= @invitation.event.location%> </p>
+  <p> at <%= @invitation.event.description%> </p>
+  <img src=`http://api.qrserver.com/v1/create-qr-code/?data=<%=@invitation.name%>&size=100x100` alt="">
+  </div>
+  
+  
 <p>
   I will be happy to see you <%= @invitation.name %>
   </p>

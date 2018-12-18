@@ -43,9 +43,9 @@ Rails.application.configure do
   :authentication => :plain,
   :address => "smtp.mailgun.org",
   :port => 587,
-  :domain => "sandboxb19af62ab76c40098544a624356f8ccd.mailgun.org",
-  :user_name => "postmaster@sandboxb19af62ab76c40098544a624356f8ccd.mailgun.org",
-  :password => "8bd640e56506dc3a3f00c12cb6345938-9b463597-f19092f6" 
+  :domain => "sandboxe9b0a82445064da6bc47eb7977d3e8b1.mailgun.org",
+  :user_name => "postmaster@sandboxe9b0a82445064da6bc47eb7977d3e8b1.mailgun.org",
+  :password => "7abd9585d0977f94f611a76e206485fa-9b463597-ffdd757a" 
    } 
 
   # Print deprecation notices to the Rails logger.

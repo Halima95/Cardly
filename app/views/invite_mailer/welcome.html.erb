@@ -5,7 +5,7 @@
   <p>
   <%= @invitation.event%>
   </p>
-
+  <img src=`http://api.qrserver.com/v1/create-qr-code/?data=$<%= @invitation.name%>!&size=100x100` alt="">
 <p>
   I will be happy to see you <%= @invitation.name %>
   </p>

@@ -1,4 +1,8 @@
 <h2>Profile</h2>
+<% if user_signed_in? %>
+
+<%= link_to "edit profile", edit_user_registration_path %>
+<% end %>
 <h3>username: </h3> <p> <%= @user.name %></p>
 <h3>email: </h3><p><%= @user.email %></p>
 <h3>My Events</h3>
@@ -8,4 +12,4 @@
     <ul>
         <li> <a href="<%= event_path(event)%>"> <%= event.title %> </a></li>
     </ul>
-     <% end %>
+ <% end %>

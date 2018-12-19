@@ -24,9 +24,11 @@ header {
 
 body {
 	margin: 0;
-	/* background-image: url("https://mbtskoudsalg.com/images/floral-frames-png-4.png"); */
-	/* background-size: cover; */
-	/* background: #c5a9a8b0; */
+	/* background-image: url("https://i.pinimg.com/originals/34/8b/60/348b60876d54d632e7878dd3be07e615.jpg"); */
+	background-size: cover;
+	/* background-position: center; */
+	/* background-position-y: 100px; */
+	background: #c5a9a8b0;
 	/* background-repeat: no-repeat; */
 	font-family: 'Ubuntu', sans-serif;
 	background-size: 700px;
@@ -59,4 +61,14 @@ nav {
 .bImg {
 	background-image: url("https://mbtskoudsalg.com/images/floral-frames-png-4.png");
 	background-size: cover;
+}
+
+.mail {
+	background-color: aquamarine;
+}
+
+.form {
+	width: 500px;
+	margin: 0px 500px;
+	background: white;
 }

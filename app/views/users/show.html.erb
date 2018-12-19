@@ -1,15 +1,17 @@
 <div class="form">
-<h2>Profile</h2>
+<h2>Profile</h2> 
 <% if user_signed_in? %>
-
-<%= link_to "edit profile", edit_user_registration_path , :class => "alink"%>
+<!-- <%= link_to "edit profile", edit_user_registration_path , :class => "alink"%>-->
+<a href="/users/edit" class="alink"> Edit <i class="tiny material-icons">edit</i> </a>
 <% end %>
 <h4>User Name: </h4> <p> <%= @user.name %></p>
 <h4>Email: </h4><p><%= @user.email %></p>
 <h4>My Events:</h4>
+
 <% @user.events.each do |event| %>
     <ul>
-        <li> <a href="<%= event_path(event)%>"> <%= event.title %> </a></li>
+        <li> <a href="<%= event_path(event)%>" class="alink"> -<%= event.title %> </a></li>
+        
     </ul>
  <% end %>
  </div>

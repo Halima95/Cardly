@@ -1,19 +1,21 @@
 class EventsController < ApplicationController
   before_action :authenticate_user!, onliy: [:new, :create, :edit, :update, :delete]
+
   def show
     @event = Event.find(params[:id])
   end
 
   def new
-    @event = Event.new 
+    @event = Event.new
   end
 
   def create
     @event = Event.new(event_params)
     @event.user_id = current_user.id
-    @event.save 
+    @event.save
     redirect_to @event
-    end
+  end
+
   def edit
     @event = Event.find_by(id: params[:id])
   end
@@ -26,12 +28,14 @@ class EventsController < ApplicationController
   end
 
   def destroy
-     @event = Event.find(params[:id])
+    @event = Event.find(params[:id])
     @event.destroy
-    redirect_to events_path
-  end 
+    redirect_to root_path
+  end
+
   private
-   def event_params
+
+  def event_params
     params.require(:event).permit(:title, :location, :date, :description, :user_id)
-  end 
+  end
 end

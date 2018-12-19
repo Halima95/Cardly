@@ -24,9 +24,11 @@ header {
 
 body {
 	margin: auto;
-	background-image: url("http://www.intrawallpaper.com/static/images/Silver-Blur-Background-Wallpaper.jpg");
-	background-size: cover;
-	/* background: #c5a9a8b0; */
+	/* background-image: url("https://mbtskoudsalg.com/images/floral-frames-png-4.png");
+	background-position: center;
+	background-position-y: 100px;
+	background-size: cover; */
+	background: #dde7d8;
 	background-repeat: no-repeat;
 	font-family: 'Ubuntu', sans-serif;
 }
@@ -56,6 +58,7 @@ nav {
 }
 .alink {
 	color: #609078;
+	/* color: #c5767a; */
 }
 
 .mail {
@@ -64,7 +67,43 @@ nav {
 
 .form {
 	width: 500px;
-	margin: 0px 500px;
+	margin: 10px 500px;
 	background: white;
 	opacity: 0.7;
+	margin-bottom: 20px;
+	padding: 30px;
+}
+.event {
+	width: 500px;
+	margin: 0px 100px;
+	background: white;
+	opacity: 0.7;
+}
+.send-form {
+	width: 500px;
+	background: white;
+	opacity: 0.7;
+	position: relative;
+	bottom: 485px;
+	left: 800px;
+}
+
+.invitees {
+	width: 500px;
+	background: white;
+	opacity: 0.7;
+	position: relative;
+	bottom: 485px;
+	left: 800px;
+	padding: 0px 20px;
+}
+
+.button {
+	background: #de9c9f;
+	border-radius: 10px;
+	color: white;
+}
+.button:hover {
+	background-color: #c5767a;
+	color: white;
 }

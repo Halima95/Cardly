@@ -1,28 +1,35 @@
-<h1>
-<%= @event.title %>
-</h1>
-<h2>
-<%= @event.location %>
-</h2>
-<h2>
-<%= @event.date %>
-</h2>
-<h2>
-<%= @event.description %>
-</h2>
+<div class="event">
+<h3>Event details: </h3>
+<h4> Title: </h4>
+<p><%= @event.title %></p>
 
-<a href="./<%= @event.id %>/edit">Edit</a>
-<br>
-<%= link_to 'Delete', event_path(@event), method: :delete %>
+<h4> Location: </h4>
+<p><%= @event.location %></p>
 
-<h1>invitees</h1>
-<% @event.invitations.each do |invitation| %>
+<h4> Date:</h4>
+<p><%= @event.date %></p>
+
+<h4> Description: </h4>
+<p><%= @event.description %></p>
+
+<a href="./<%= @event.id %>/edit" class="alink">Edit<i class="tiny material-icons">edit</i> |</a>
+
+<%= link_to 'Delete' , event_path(@event),:class =>"alink", method: :delete %> <i class="tiny material-icons">delete</i>
+</div>
+<div class="send-form">
+<h4> Send invitation:</h4>
+<hr>
+<%= render partial: 'invitation_form' %>
+</div>
+
+<div class="invitees">
+ 
+<h3><%= pluralize(@event.invitations.count,"invitee") %>: </h3> 
 <ul>
+<% @event.invitations.each do |invitation| %>
 <li>
  <p><%= invitation.name %>: <%= invitation.email %> </p> 
 </li>
-</ul>
 <% end %>
-
-<h5> Send invitation:</h2>
-<%= render partial: 'invitation_form' %>
+</ul>
+</div>

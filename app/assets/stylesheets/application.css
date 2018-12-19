@@ -154,3 +154,9 @@ a.color {
 	background-color: #c5767a;
 	color: white;
 }
+
+
+.alink {
+	position: relative;
+	z-index: 1000;
+}

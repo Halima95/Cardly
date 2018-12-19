@@ -21,7 +21,6 @@ header {
 	text-align: center;
 	background: white;
 }
-
 body {
 	margin: auto;
 	/* background-image: url("https://mbtskoudsalg.com/images/floral-frames-png-4.png");
@@ -31,6 +30,9 @@ body {
 	background: #dde7d8;
 	background-repeat: no-repeat;
 	font-family: 'Ubuntu', sans-serif;
+}
+.cardly {
+	color: black;
 }
 .bImg {
 	margin: 0;
@@ -51,7 +53,7 @@ nav {
 
 a.color {
 	/* color: black; */
-	/* font-size: 35px; */
+	font-size: 18px;
 }
 
 .home {
@@ -125,6 +127,7 @@ a.color {
 	margin: 0px 100px;
 	background: white;
 	opacity: 0.7;
+	padding: 0px 20px;
 }
 .send-form {
 	width: 500px;
@@ -133,6 +136,7 @@ a.color {
 	position: relative;
 	bottom: 485px;
 	left: 800px;
+	padding: 0px 20px;
 }
 
 .invitees {
@@ -153,4 +157,13 @@ a.color {
 .button:hover {
 	background-color: #c5767a;
 	color: white;
+}
+.icon {
+	color: #9c494d;
+}
+footer {
+	color: white;
+	background: #abc28e;
+	margin-top: 30px;
+	padding: 11px;
 }

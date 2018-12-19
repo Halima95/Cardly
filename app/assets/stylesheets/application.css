@@ -21,27 +21,19 @@ header {
 	text-align: center;
 	background: white;
 }
-
 body {
 	margin: auto;
-	/* background-image: url("https://mbtskoudsalg.com/images/floral-frames-png-4.png");
-	background-position: center;
-	background-position-y: 100px;
-	background-size: cover; */
 	background: #dde7d8;
 	background-repeat: no-repeat;
 	font-family: 'Ubuntu', sans-serif;
 }
+.cardly {
+	color: rgb(119, 115, 115);
+	font-family: 'Sacramento', cursive;
+	font-size: 100px;
+}
 .bImg {
 	margin: 0;
-	/* background-image: url("https://mbtskoudsalg.com/images/floral-frames-png-4.png");
-    background-size: cover;
-    background-position: center;
-    background-position-y: 100px; */
-	/* background: #c5a9a8b0; */
-	/* background-repeat: no-repeat;
-    font-family: 'Ubuntu', sans-serif;
-    background-size: 700px; */
 }
 
 nav {
@@ -50,8 +42,7 @@ nav {
 }
 
 a.color {
-	/* color: black; */
-	/* font-size: 35px; */
+	font-size: 15px;
 }
 
 .home {
@@ -64,13 +55,6 @@ a.color {
 	height: 90vh;
 	text-align: center;
 	position: relative;
-	/* background-image: url("https://mbtskoudsalg.com/images/floral-frames-png-4.png");
-    background-size: cover;
-    background-position: center; */
-	/* background-position-y: 100px; */
-	/* background-repeat: no-repeat;
-    font-family: 'Ubuntu', sans-serif;
-    background-size: 700px; */
 }
 
 @keyframes rotate {
@@ -91,7 +75,6 @@ a.color {
 	background-image: url("https://mbtskoudsalg.com/images/floral-frames-png-4.png");
 	background-size: cover;
 	background-position: center;
-	/* background-position-y: 100px; */
 	background-repeat: no-repeat;
 	font-family: 'Ubuntu', sans-serif;
 	background-size: 700px;
@@ -107,7 +90,11 @@ a.color {
 	color: #9c494d;
 	font-size: 20px;
 }
-
+.link {
+	color: #609078;
+	position: relative;
+	z-index: 1000;
+}
 .mail {
 	background-color: aquamarine;
 }
@@ -125,6 +112,7 @@ a.color {
 	margin: 0px 100px;
 	background: white;
 	opacity: 0.7;
+	padding: 0px 20px;
 }
 .send-form {
 	width: 500px;
@@ -133,6 +121,7 @@ a.color {
 	position: relative;
 	bottom: 485px;
 	left: 800px;
+	padding: 0px 20px;
 }
 
 .invitees {
@@ -154,9 +143,12 @@ a.color {
 	background-color: #c5767a;
 	color: white;
 }
-
-
-.alink {
-	position: relative;
-	z-index: 1000;
+.icon {
+	color: #9c494d;
+}
+footer {
+	color: white;
+	background: #abc28e;
+	margin-top: 30px;
+	padding: 11px;
 }

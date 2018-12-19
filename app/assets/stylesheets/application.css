@@ -23,27 +23,17 @@ header {
 }
 body {
 	margin: auto;
-	/* background-image: url("https://mbtskoudsalg.com/images/floral-frames-png-4.png");
-	background-position: center;
-	background-position-y: 100px;
-	background-size: cover; */
 	background: #dde7d8;
 	background-repeat: no-repeat;
 	font-family: 'Ubuntu', sans-serif;
 }
 .cardly {
-	color: black;
+	color: rgb(119, 115, 115);
+	font-family: 'Sacramento', cursive;
+	font-size: 100px;
 }
 .bImg {
 	margin: 0;
-	/* background-image: url("https://mbtskoudsalg.com/images/floral-frames-png-4.png");
-    background-size: cover;
-    background-position: center;
-    background-position-y: 100px; */
-	/* background: #c5a9a8b0; */
-	/* background-repeat: no-repeat;
-    font-family: 'Ubuntu', sans-serif;
-    background-size: 700px; */
 }
 
 nav {
@@ -52,8 +42,7 @@ nav {
 }
 
 a.color {
-	/* color: black; */
-	font-size: 18px;
+	font-size: 15px;
 }
 
 .home {
@@ -66,13 +55,6 @@ a.color {
 	height: 90vh;
 	text-align: center;
 	position: relative;
-	/* background-image: url("https://mbtskoudsalg.com/images/floral-frames-png-4.png");
-    background-size: cover;
-    background-position: center; */
-	/* background-position-y: 100px; */
-	/* background-repeat: no-repeat;
-    font-family: 'Ubuntu', sans-serif;
-    background-size: 700px; */
 }
 
 @keyframes rotate {
@@ -93,7 +75,6 @@ a.color {
 	background-image: url("https://mbtskoudsalg.com/images/floral-frames-png-4.png");
 	background-size: cover;
 	background-position: center;
-	/* background-position-y: 100px; */
 	background-repeat: no-repeat;
 	font-family: 'Ubuntu', sans-serif;
 	background-size: 700px;
@@ -109,7 +90,11 @@ a.color {
 	color: #9c494d;
 	font-size: 20px;
 }
-
+.link {
+	color: #609078;
+	position: relative;
+	z-index: 1000;
+}
 .mail {
 	background-color: aquamarine;
 }

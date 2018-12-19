@@ -1,5 +1,6 @@
 # Cardly web App
 
+![](app/assets/images/mainPage.png)
 
 ### [ Heroku Link](https://cardly-invitation.herokuapp.com/)
 

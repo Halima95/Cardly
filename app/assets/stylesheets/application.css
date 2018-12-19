@@ -32,33 +32,80 @@ body {
 	background-repeat: no-repeat;
 	font-family: 'Ubuntu', sans-serif;
 }
+.bImg {
+	margin: 0;
+	/* background-image: url("https://mbtskoudsalg.com/images/floral-frames-png-4.png");
+    background-size: cover;
+    background-position: center;
+    background-position-y: 100px; */
+	/* background: #c5a9a8b0; */
+	/* background-repeat: no-repeat;
+    font-family: 'Ubuntu', sans-serif;
+    background-size: 700px; */
+}
 
 nav {
 	/* background: #d09683; */
-	background: #746966;
+	background: #abc28e;
 }
-.head {
-	color: rgba(255, 255, 0, 0.404);
-	font-family: 'Yesteryear', cursive;
+
+a.color {
+	/* color: black; */
+	/* font-size: 35px; */
 }
+
 .home {
 	align-content: center;
 }
-
-.cardly {
+.landing {
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	height: 90vh;
+	text-align: center;
 	position: relative;
-	top: 290px;
-	left: 630px;
+	/* background-image: url("https://mbtskoudsalg.com/images/floral-frames-png-4.png");
+    background-size: cover;
+    background-position: center; */
+	/* background-position-y: 100px; */
+	/* background-repeat: no-repeat;
+    font-family: 'Ubuntu', sans-serif;
+    background-size: 700px; */
 }
 
-.cardlyp {
-	position: relative;
-	top: 290px;
-	left: 570px;
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
+
+.bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("https://mbtskoudsalg.com/images/floral-frames-png-4.png");
+	background-size: cover;
+	background-position: center;
+	/* background-position-y: 100px; */
+	background-repeat: no-repeat;
+	font-family: 'Ubuntu', sans-serif;
+	background-size: 700px;
+	transform: rotate(0deg);
+	animation-name: rotate;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
 .alink {
-	color: #609078;
-	/* color: #c5767a; */
+	/* color: #609078; */
+	color: #9c494d;
+	font-size: 20px;
 }
 
 .mail {

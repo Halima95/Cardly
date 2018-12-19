@@ -1,7 +1,7 @@
 class InviteMailer < ApplicationMailer
 
   # Can be anything you want, bear in mind that if you want replies -- it needs to be an email you have access to.
-  default from: "HalimaAlshahrani@gmail.com"
+  default from: "Cardly@gmail.com"
 
   # Much like controllers for views in our app (like def index), the method should match our view name -- in this case welcome.
   def welcome(invitation)
@@ -16,6 +16,6 @@ class InviteMailer < ApplicationMailer
     #   mg_client.send_message ENV["sandbox6a882ee8ad374df9b6c9f46d66988a59.mailgun.org"], message_params
     # end
 
-    mail to: @invitation.email, subject: "Sample Mail using Mailgun API"
+    mail to: @invitation.email, subject: "Cardly Invitation"
   end
 end

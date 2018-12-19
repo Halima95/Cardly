@@ -18,25 +18,25 @@
   <nav>
    <div >
   <ul  class="left hide-on-med-and-down">
-  <li><%= link_to 'Home', root_path %> </li>
-  <li><%= link_to 'Create Invitation', new_event_path %> </li>
+  <li><%= link_to 'Home', root_path , class:"color" %> </li>
+  <li><%= link_to 'Create Invitation', new_event_path , class:"color"%> </li>
   </ul>
         
 
   <% if user_signed_in? %>
 
       <ul class="left hide-on-med-and-down">
-    <%= link_to "Profile", user_path(current_user) %>
+    <%= link_to "Profile", user_path(current_user) , class:"color" %>
     </ul>
 
     <ul class="right hide-on-med-and-down">
-    <%= link_to "Log_Out", destroy_user_session_path, method: :delete %>
+    <%= link_to "Log_Out", destroy_user_session_path, method: :delete , class:"color" %>
     </ul>
 
     <% else %>
    <ul  class="right hide-on-med-and-down">
-   <li><%= link_to "Log_in", new_user_session_path %></li>
-   <li><%= link_to "Join", new_user_registration_path %></li>
+   <li><%= link_to "Log_in", new_user_session_path , class:"color" %></li>
+   <li><%= link_to "Join", new_user_registration_path , class:"color" %></li>
   </ul>
   <% end%>
   </div>

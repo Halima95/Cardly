@@ -43,10 +43,11 @@ Rails.application.configure do
   :authentication => :plain,
   :address => "smtp.mailgun.org",
   :port => 587,
-  :domain => "sandboxe9b0a82445064da6bc47eb7977d3e8b1.mailgun.org",
-  :user_name => "postmaster@sandboxe9b0a82445064da6bc47eb7977d3e8b1.mailgun.org",
-  :password => "7abd9585d0977f94f611a76e206485fa-9b463597-ffdd757a" 
+  :domain =>Rails.application.credentials.dig( :mailgun, :domain ) ,
+  :user_name => Rails.application.credentials.dig( :mailgun, :username ),
+  :password => Rails.application.credentials.dig( :mailgun, :password ) 
    } 
+  
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log

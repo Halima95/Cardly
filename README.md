@@ -49,7 +49,7 @@ First of all was deciding what we actually wanted to build , and dividing the wo
 
 ## Challenges:
 
-Getting used with API'S . 
+Getting used with API'S and mailer . 
 
 
 ## What's next:
@@ -57,7 +57,8 @@ Getting used with API'S .
 There's many additons to be added to this project such as : 
 - Tracking invitees status.
 - Adding invitation themes.
-- Calendar add. 
+- Adding Calendar.
+- Adding contacts for auto send.
 
 ## Credits:
 
